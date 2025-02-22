@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: #ff004f;
+  font-family: "poppins", sans-serif;
+ color: white;
+  background-color: #080808; */
+  text-decoration: none;
+}
+.hideOnMobile {
+  display: none;
+}
+.ShowOnMobile {
+  display: none !important;
+  font-size: 30px;
+  color: #ff004f;
+}
+.banner {
+  background-color: #080808;
+  height: max-content;
+  min-height: 100vh;
+  width: 100%;
+}
+.description {
+  font-size: 15px;
+  text-align: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 10%;
+  position: relative;
+}
+.logo {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.logo span {
+  color: #ff004f;
+}
+.nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0px;
+}
+.nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+.nav .navbar li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.nav .navbar li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+}
+.nav .navbar li a:hover {
+  color: #ff004f;
+  transform: scale(1.2);
+}
+.auto-type {
+  color: #ff004f;
+  font-size: 22pxpx;
+}
+.banner-info {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+.banner-data {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* width: 100%; */
+}
+.banner-data h1 {
+  letter-spacing: 2px;
+}
+#banner-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .navbar li a {
+    display: none;
+  }
+  .ShowOnMobile {
+    display: flex !important;
+  }
+
+  .round {
+    height: 130px;
+    width: 130px;
+  }
+}
+.round {
+  height: 65vmin;
+  width: 65vmin;
+  /* background-color: blue; */
+  background-color: #ff00517d;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+.round img {
+  height: 99.9%;
+  width: 99.6%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: black;
+  transition: 0.5s all ease-in;
+}
+.round img:hover {
+  box-shadow: inset 0 0 50px #fff, /* inner white glow */ inset 20px 0 80px #f0f,
+    /* inner left magenta short */ inset -20px 0 80px #0ff,
+    /* inner right cyan short */ 0 0 50px #fff; /* outer white glow */
+}
+.social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.social-media ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+.social-media ul li a {
+  color: white;
+  font-size: 25px;
+}
+.social-media ul li a i:hover {
+  color: #ff004f;
+  transform: scale(1.2);
+}
+
+.sidebar {
+  height: 99vh;
+  width: 225px;
+  background-color: #f42265e2;
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  top: 0px;
+  right: 0px;
+  z-index: 99;
+  gap: 25px;
+}
+
+.sidebar li {
+  list-style: none;
+  width: 100%;
+}
+.sidebar li a {
+  text-decoration: none;
+  color: black;
+}
+.cross {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+}
+
+/* --------------about-------------- */
+#about {
+  background-color: #080808;
+  padding: 20px;
+  padding-top: 80px;
+  width: 100%;
+  height: fit-content;
+  color: white;
+}
+.about-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.about-inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+.skills-img img {
+  height: 400px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+.skills-info h2 {
+  font-size: 40px;
+}
+.skills-info .about-desc {
+  font-size: 14px;
+}
+.aboutme .skills h5 {
+  font-size: 18px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.skills-info h6 {
+  font-size: 12px;
+  color: #ff004f;
+  margin: 0;
+}
+
+.skills-info h2 {
+  font-size: 40px;
+}
+.skills-info .about-desc {
+  font-size: 14px;
+}
+.aboutme .skills h5 {
+  font-size: 18px;
+  padding-bottom: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+.skills-detail h6 {
+  font-size: 12px;
+  color: #ff004f;
+  margin: 0;
+}
+.skills .skills-detail p {
+  font-size: 13px;
+}
+
+.aboutme .experience h5 {
+  font-size: 18px;
+  padding-bottom: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+.experience-info h6 {
+  font-size: 12px;
+  color: #ff004f;
+  margin: 0;
+}
+.experience-info p {
+  font-size: 13px;
+}
+
+.aboutme .education h5 {
+  font-size: 18px;
+  padding-bottom: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+.education-info h6 {
+  font-size: 12px;
+  color: #ff004f;
+  margin: 0;
+}
+.education-info p {
+  font-size: 13px;
+}
+.aboutme {
+  display: flex;
+  gap: 15px;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+}
+
+.experience-info {
+  display: none;
+}
+.education-info {
+  display: none;
+}
+
+/* ----------------services------------------ */
+#service {
+  background-color: #080808;
+  color: white;
+  height: fit-content;
+  width: 100%;
+  /* padding-top: 50px; */
+  display: flex;
+  padding: 40px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service-inner {
+  width: 100%;
+}
+.service-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#service h1 {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+div.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  width: 100%;
+  padding-top: 30px;
+  margin: 0px;
+}
+
+.service-container .box {
+  background-color: rgb(55, 56, 56);
+  padding: 20px 30px 20px 20px;
+  border-radius: 10px;
+  width: 250px;
+  margin-top: 20px;
+  height: auto;
+}
+
+.service-container .box:hover {
+  background-color: #ff004f;
+  /* transform: scale(1.1); */
+  transform: translateY(-10px);
+  /* margin-bottom:20px ; */
+}
+.service-container .box i {
+  font-size: 40px;
+}
+.service-container .box h3 {
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.service-container .box p {
+  font-size: 14px;
+}
+.service-container .box a {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 786px) {
+  .service-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* ------------------my work--------------- */
+
